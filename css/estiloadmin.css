@@ -1,0 +1,24 @@
+/*Estilo de tablas en administración*/
+.tabla-admin {
+    table-layout: fixed;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(140, 30, 35);
+    border-collapse: collapse;
+    width: 100%;
+}
+/* Estilo de celdas de tablas */
+th, td {
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    vertical-align: center;
+    word-wrap: break-word;
+}
+/*Estilo de encabezados de tablas*/
+caption {
+    font-family: Cairo;
+    font-size: 25px;
+}

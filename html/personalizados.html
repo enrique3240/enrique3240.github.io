@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilocomun.css" />
+    <link rel="stylesheet" href="../css/estilopersonalizados.css" />
+    <title>SuperCakes Pastelerías</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <section class="navegacion">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Bienvenido a SuperCakes" class="img-logo" />
+                <span class="nombre-pasteleria">SuperCakes Pastelerías</span>
+            </div>
+            <ul class="lista-nav">
+                <a href="../index.html"><img class="img-menu" src="../img/home.png" /></a>
+                <li class="list-item"><a href="../index.html">Página Principal</a></li>
+
+                <a href="../html/personalizados.html"><img class="img-menu" src="../img/customcake.png" /></a>
+                <li class="list-item">
+                    <a href="../html/personalizados.html">Personaliza tu pastel</a>
+                </li>
+
+                <a href="../html/login.html"><img class="img-menu" src="../img/admin.png" /></a>
+                <li class="list-item">
+                    <a href="../html/login.html">Administración</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="contenedor contenedor-enumeracion">
+            <!--TAMAÑO-->
+            <section class="enumeracion">
+                <label for="lista-tamano">Tamaño:</label>
+                <ul class="listado" id="lista-tamano">
+                    <li class="item-enumeracion">
+                        <input type="radio" class="tamano" name="tamano" id="tamano-chico" value="tamanochico">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="tamano-chico">Chico</label>
+                            <span class="precio">$250</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="tamano" name="tamano" id="tamano-mediano" value="tamanomediano">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="tamano-mediano">Mediano</label>
+                            <span class="precio">$325</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="tamano" name="tamano" id="tamano-grande" value="tamanogrande">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="tamano-grande">Grande</label>
+                            <span class="precio">$400</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="tamano" name="tamano" id="tamano-extragrande"
+                            value="tamanoextragrande">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="tamano-extragrande">Extra Grande</label>
+                            <span class="precio">$450</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <label for="numero-pisos">¿Cuántos pisos requiere?</label>
+                        <input type="range" min="1" max="3" value="1" oninput="num.value=this.value" class="slider"
+                            id="numero-pisos">
+                        <output id="num">1</output>
+                    </li>
+                </ul>
+            </section>
+            <!--SABORES-->
+            <section class="enumeracion">
+                <label for="lista-sabores">Sabor principal:</label>
+                <ul class="listado" id="lista-sabores">
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-chocolate" value="chocolate">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-chocolate">Chocolate</label>
+                            <span class="precio">$50</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-tresleches" value="tresleches">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-tresleches">Tres Leches</label>
+                            <span class="precio">$100</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-fresa" value="fresa">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-fresa">Fresa</label>
+                            <span class="precio">$75</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-limon" value="limon">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-limon">Limón</label>
+                            <span class="precio">$70</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-queso" value="queso">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-queso">Queso</label>
+                            <span class="precio">$100</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-vainilla" value="vainilla">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-vainilla">Vainilla</label>
+                            <span class="precio">$50</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="radio" class="radios" name="sabores" id="sabor-zarzamora" value="zarzamora">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="sabor-zarzamora">Zarzamora</label>
+                            <span class="precio">$85</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!--FRUTAS-->
+            <section class="enumeracion">
+                <label for="lista-frutas">Frutas:</label>
+                <ul class="listado" id="lista-frutas">
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="fruta-coco" value="frutacoco">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="fruta-coco">Coco</label>
+                            <span class="precio">$50</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="fruta-durazno" value="frutadurazno">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="fruta-durazno">Durazno</label>
+                            <span class="precio">$50</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="fruta-fresa" value="frutafresa">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="fruta-fresa">Fresa</label>
+                            <span class="precio">$75</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="fruta-nuez" value="frutanuez">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="fruta-nuez">Nuez</label>
+                            <span class="precio">$90</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="fruta-pina" value="frutapina">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="fruta-pina">Piña</label>
+                            <span class="precio">$75</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="enumeracion">
+                <label for="lista-extras">Otros Ingredientes:</label>
+                <ul class="listado" id="lista-extras">
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="extra-chocolate" value="extrachocolate">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="extra-chocolate">Chocolate</label>
+                            <span class="precio">$75</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="extra-cremabatida" value="extracremabatida">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="extra-cremabatida">Crema Batida (Chantillí)</label>
+                            <span class="precio">$65</span>
+                        </div>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="extra-gelatina" value="extragelatina">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="extra-gelatina">Gelatina</label>
+                            <span class="precio">$40</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="extra-chocolatepolvo" value="extrachocolatepolvo">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="extra-chocolatepolvo">Chocolate en Polvo</label>
+                            <span class="precio">$35</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="enumeracion">
+                <label for="lista-adornos">Adornos y extras:</label>
+                <ul class="listado" id="lista-adornos">
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="adorno-figura" value="adornofigura">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="adorno-figura">Figura (muñeco) de plástico</label>
+                            <span class="precio">$65</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="adorno-velas" value="adornovelas">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="adorno-velas">Velas</label>
+                            <span class="precio">$50</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="adorno-globos" value="adornoglobos">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="adorno-globos">Globos</label>
+                            <span class="precio">$100</span>
+                        </div>
+                    </li>
+                    <li class="item-enumeracion">
+                        <input type="checkbox" class="checkboxes" id="adorno-tarjetas" value="adornotarjetas">
+                        <div class="etiqueta-precio">
+                            <label class="etiqueta-enumeracion" for="adorno-tarjetas">Tarjeta:</label>
+                            <span class="precio">$45</span>
+                        </div>
+                    </li>
+                    <ul class="listado">
+                        <li class="item-enumeracion">
+                            <input type="radio" class="radios" name="tarjetas" id="tarjeta-aniversario"
+                                value="aniversario">
+                            <label class="etiqueta-enumeracion" for="tarjeta-aniversario">De Aniversario</label>
+                        </li>
+                        <li class="item-enumeracion">
+                            <input type="radio" class="radios" name="tarjetas" id="tarjeta-cumple" value="cumple">
+                            <label class="etiqueta-enumeracion" for="tarjeta-cumple">De Cumpleaños</label>
+                        </li>
+                        <li class="item-enumeracion">
+                            <input type="radio" class="radios" name="tarjetas" id="tarjeta-boda" value="boda">
+                            <label class="etiqueta-enumeracion" for="tarjeta-boda">De Boda</label>
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+            <!--Formulario Pedido-->
+            <section class="enumeracion formulario-pedido-contenedor">
+                <form class="formulario-pedido">
+                    <label class="etiqueta-textos" for="texto-nombre">Nombre Completo:</label>
+                    <input class="ingreso-texto" type="text" id="texto-nombre">
+                    <label class="etiqueta-textos" for="texto-direccion">Dirección:</label>
+                    <input class="ingreso-texto" type="text" id="texto-direccion">
+                    <label class="etiqueta-textos" for="texto-estado">Estado:</label>
+                    <input class="ingreso-texto" type="text" id="texto-estado">
+                    <label class="etiqueta-textos" for="texto-municipio">Municipio:</label>
+                    <input class="ingreso-texto" type="text" id="texto-municipio">
+                    <label class="etiqueta-textos" for="texto-telefono">Teléfono:</label>
+                    <input class="ingreso-texto" type="tel" maxlength="10" id="texto-telefono">
+                    <label class="etiqueta-textos" for="texto-correo">Correo Electrónico:</label>
+                    <input class="ingreso-texto" type="text" id="texto-correo">
+                    <button class="boton-enlace">Realizar pedido</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+
+</body>
+
+<footer>
+    <section class="pie-de-pagina">
+        <div class="contacto">
+            <ul class="redes">
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/whatsapp.png" />
+                    <a href="#">WhatsApp: +52 246 123 4567</a>
+                </li>
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/phone.png" />
+                    <a href="#">Teléfono: 246 765 4321</a>
+                </li>
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/location.png" />
+                    <span class="texto-redes">Ubicación: Plaza de la Constitucion #14, Centro, Tlaxcala de Xicohténcatl,
+                        Tlax.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="separador" />
+
+        <img class="mapa" src="../img/map.png" />
+
+        <div class="separador" />
+
+        <div class="contacto">
+            <ul class="redes">
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/facebook.png" />
+                    <a href="#">Facebook</a>
+                </li>
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/instagram.png" />
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/twitter.png" />
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="separador" />
+
+        <div class="extra">
+            <ul class="redes">
+                <li class="item-redes">
+                    <img class="icon-footer" src="../img/clock.png" />
+                    <span class="texto-redes">Horario de atención: Lunes a domingo, de 9:00 a.m. a 8:00 p.m.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+</html>

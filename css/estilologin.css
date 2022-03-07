@@ -1,0 +1,32 @@
+.inicio-sesion {
+    background-color: rgba(140, 30, 35, 0.33);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    flex-flow: column;
+
+}
+
+.texto-encabezado {
+    font-size: 20px;
+    font-family: Cairo;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.texto-ingreso {
+    min-width: 250px;
+}
+
+.etiqueta {
+    font-family: Cairo;
+    font-size: 16px;
+}
+.boton-enlace {
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}

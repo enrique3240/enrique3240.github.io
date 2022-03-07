@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Domine;
+  src: url(../fonts/Domine.ttf);
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(../fonts/Cairo.ttf);
+}
+
+.contenedor-enumeracion {
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.enumeracion {
+  background-color: rgba(140, 30, 35, 0.33);
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.enumeracion label, span {
+    font-family: Cairo;
+    font-size: 18px;
+}
+
+.formulario-pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  min-width: 500px;
+}
+.listado {
+  list-style-type: none;
+  margin-left: -15px;
+  margin-right: 15px;
+}
+
+.item-enumeracion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+}
+
+.etiqueta-precio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 225px;
+}
+
